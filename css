@@ -1,0 +1,387 @@
+html{
+ scroll-behavior:smooth; 
+}
+
+/*Text throughout the website properties*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Garamond, sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+table	{
+   border: 1px solid black;
+}
+/*H1 Tags for Title of Cybersecurity*/
+h1	{
+ font-family: Garamond, Strait, sans-serif;
+ color: #FFF;
+ font-size: 3em;
+ line-height: 2em;
+ text-align: center;
+ text-shadow: 0 0 40px
+}
+
+h2	{
+ font-family: Georgia, Strait, sans-serif;
+ font-size: 1.5em;
+ line-height: 1.7em;
+ text-align: center;
+ color: white;
+ background: #035fa6;
+ text-shadow: 0 0 10px;
+ width: 100%;
+    
+}
+h3 {
+ font-family: Georgia, Strait, sans-serif;
+ font-size: 1.5em;
+ line-height: 1.7em;
+ text-align: center;
+ background-color: black;
+ border-radius:5px;
+ color: white;
+ padding:10px;
+}
+h4 {
+ font-family: Georgia, Strait, sans-serif;
+ font-size: 1.5em;
+ line-height:10px;
+ text-align: center;
+ color: #FFB52E;
+ text-shadow: 0 0 10px;
+ background-color:black;
+ padding:20px;
+ border-radius:5px;
+}
+h5 {
+ font-family: Georgia, Strait, sans-serif;
+ font-size: 1.5em;
+ color:#f2ff00;
+ background-color:black;
+ border-radius:5px;
+ padding:20px;
+}
+h6{
+ font-family:Georgia, Strait, sans-serif;
+ font-size: 0.91em;
+ background-color: black;
+ border-radius:5px;
+ color: white;
+ padding:10px;
+}
+p {
+ font-family: Arial, Strait, sans-serif;
+ font-size: 1.15em;
+ line-height: 1em;
+ text-align: center;
+ color: black;
+ background-color:#FFF;
+ border-radius: 20px;
+ padding: 10px;
+}
+i {
+    color:purple;
+}
+small {
+ float:inherit;
+}
+
+li {
+ font-family: Arial, Strait, sans-serif;
+ font-size: 1.15em;
+ line-height: 1.6em;
+ text-align: center;
+ color:#FFF;
+}
+#wrapper {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ADD8E6;
+  padding-right: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+img {
+ max-width:100vw;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+
+/*Layout Styles*/
+.banner
+{
+	color: #fff;
+    background:	 repeating-radial-gradient( circle at 0 0, transparent 0, #000 10px ), repeating-linear-gradient( #001545, #53dfe8 );
+	padding: 1em 0 1em 1.25em;
+	text-align: center;
+}
+.main
+{
+	margin: 0 1em 0 1em;
+}
+
+.footer
+{
+	color: #fff;
+	background: #555;
+	padding: 0.5em 1.25em 1em 1.25em;
+}
+.brightness {
+    display: inline-block;
+}
+.brightness img:hover {
+    opacity: .9;
+    background-color: white;
+    cursor: pointer;
+}
+.brightnessrow {
+  width: 20vw;
+  height: 20vw;
+  float: left;
+  padding: 0 1vw 0 1vw;
+}
+.brightnessrow img {
+    width:20vw;
+    height:20vw;
+    background:#111;
+    object-fit:contain;
+}
+.brightnessrow img:hover {
+    opacity: .9;
+    background-color: white;
+    cursor: pointer;
+}
+
+.brightnessrow h6{
+    height: 2.5vw;
+    padding: 10px 0 10px 0;
+}
+
+.image1 {
+    float:left;
+}
+.image1 img:hover {
+    opacity: .9;
+    background-color: white;
+    cursor: pointer;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient( 45deg, #000 0px, #000 5px, #333 6px, #333 11px, #000 12px);
+    color: white;
+}
+#home::before{
+    content: "";
+  /*  position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#home.landscape{
+    height:1000px;
+}
+#tips.landscape {
+    width: 400px;
+    position: absolute;
+    float: left;
+    left: 0;
+}
+#homewrapper.landscape {
+    position: relative;
+    left: 200px;
+    right: 0;
+    float:left;
+    width: calc(100% - 400px);
+}
+/* cybersafety Section */
+#cybersafety{
+    flex-direction: column;
+    background:  repeating-radial-gradient( circle at 0 0, transparent 0, #000111 10px ), repeating-linear-gradient( #00192b, #00192b );
+}
+#cybersafety h3{
+    margin: 10px;
+    background-color:#001545;
+    
+}
+
+/*images section 1*/
+#imagesection1{
+    background-color: #000000dc;
+    height: calc(22.5vw + 20px);
+    padding: 2.5vw 0 2.5vw 0;
+}
+#imagesection1 .sectiondiv {
+    margin-left: 17vw;
+}
+#imagesection1 img{
+    background: #EEE;
+}
+/* cyberbullying section */
+#cyberbullying{
+    display: flex;
+    flex-direction: column;
+    background-color: #00ab00;
+opacity: 0.8;
+background:  repeating-radial-gradient( circle at 0 0, transparent 0, #00ab00 10px ), repeating-linear-gradient( #53dfe855, #53dfe8 );
+}
+#cyberbullying h1{
+    margin: 60px;
+}
+#cyberbullying h3{
+    margin: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Arial, Strait, sans-serif;
+    background-color:#7c7d80;
+}
+#cyberbullying li{
+    background-color:#AAA;
+    border-radius: 20px;
+    color:#000;
+    font-weight:bold;
+}
+/*gallery section - This is a row. */
+#gallery{
+    background-color: #000000dc;
+    height: calc(22.5vw + 20px);
+    padding: 2.5vw 0 2.5vw 0;
+}
+#gallery .sectiondiv {
+    margin-left: 6vw;
+}
+/*Mitigation section*/
+#mitigation
+{
+    background:repeating-radial-gradient( circle at 0 0, transparent 0, #0033ff 10px ), repeating-linear-gradient( #496dfc, #53dfe8 );
+}
+#mitigation li {
+    background: RGB(0, 0, 0, .8);
+    border:10px;
+    line-height:40px;
+}
+/*Privacy issues section*/
+#privacyissues{
+    background:repeating-radial-gradient( circle at 0 0, transparent 0, #a6eaf7 10px), repeating-linear-gradient( #a42fd6, #eba6f7);    
+}
+#privacyissues li {
+    background-color:#000;
+    opacity: 0.9;
+    border:15px;
+    font-weight:bold;
+}
+#privacyissues h5 {
+ font-family: Georgia, Strait, sans-serif;
+ font-size: 1.1em;
+ line-height: 1em;
+ text-align: center;
+ color: #ee6ff7;
+ margin: 20px;
+ text-shadow: 0 0 10px;
+ background-color:black;
+    
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: FFF;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: #ffebcd;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/*dropdown button*/
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  float: left;
+  position: relative;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: static;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
